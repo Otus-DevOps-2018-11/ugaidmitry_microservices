@@ -25,7 +25,7 @@ ADD поменял  на COPY.
 
 docker build -t json1/post:1.0 ./post-py
 docker build -t json1/comment:1.0 ./comment
-docker build -t json1ui:1.0 ./ui
+docker build -t json1/ui:1.0 ./ui
 
 В процессе сборки исправлен Dockerfile для post-py 
 (скачал недостающие пакеты)
