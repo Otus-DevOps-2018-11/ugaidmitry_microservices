@@ -32,7 +32,7 @@ services:
     networks:
       back-net:
         aliases:
-        - commentPool overlaps with other one on this address space
+        - comment
       front-net:
         aliases:
         - comment
