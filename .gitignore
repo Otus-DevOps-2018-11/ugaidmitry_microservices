@@ -7,3 +7,16 @@ varibles.json
 application_default_credentials.json
 terraform.tfvars
 *.retry
+jdauphant.nginx
+vault.key
+
+.vagrant/
+
+*.pyc
+.molecule
+.cache
+.pytest_cache
+
+google-cloud-sdk/*
+
+.env
