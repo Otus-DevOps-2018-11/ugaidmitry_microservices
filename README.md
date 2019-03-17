@@ -84,4 +84,4 @@ docker run -d --network=reddit -p 9292:9292 json1/ui:2.0
 - Произвел сборку образов при помощи скриптов docker_build.sh 
 - Определил в docker/docker-compose.yml новый сервис Exporters 
 - Добавил отслеживание за новым сервисом в Prometheus 
-
+- Залил образу на docker hub https://hub.docker.com/u/json1
