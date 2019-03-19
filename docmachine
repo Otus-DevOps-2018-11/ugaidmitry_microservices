@@ -1,0 +1,12 @@
+
+export GOOGLE_PROJECT=docker-232014 
+docker-machine create --driver google \
+--google-machine-image ubuntu-os-cloud/global/images/ubuntu-1604-xenial-v20170721 \
+--google-machine-type n1-standard-1 \
+--google-zone europe-west1-b \
+docker-host
+
+
+
+
+

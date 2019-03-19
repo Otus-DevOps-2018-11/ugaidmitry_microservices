@@ -66,3 +66,22 @@ docker run -d --network=reddit -p 9292:9292 json1/ui:2.0
 - создал первый пайплайн
 
 
+Д.3 20
+Подготовка окружения
+ - Создал правило firewall Prometheus и Puma: 
+ - Создал Docker хост в GCE и настроил окружение 
+ 
+  Подключился к docker-machine 
+
+  Prometheus 
+  - Запустил Prometheus внутри docker контейнера 
+  - Остановил Prometheus 
+  Создание Docker образа 
+  - Создал docker файл monitoring/prometheus/Dockerfile 
+  - В monitoring/prometheus создал файл prometheus.yml  
+  - В prometheus собрала Docker образ
+
+- Произвел сборку образов при помощи скриптов docker_build.sh 
+- Определил в docker/docker-compose.yml новый сервис Exporters 
+- Добавил отслеживание за новым сервисом в Prometheus 
+- Залил образу на docker hub https://hub.docker.com/u/json1
