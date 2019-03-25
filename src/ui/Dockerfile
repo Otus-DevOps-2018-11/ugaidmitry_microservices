@@ -1,5 +1,4 @@
 FROM alpine:3.7
-MAINTAINER Pavel Tishkov <tishkov.pavel@gmail.com>
 
 ENV APP_HOME /app
 

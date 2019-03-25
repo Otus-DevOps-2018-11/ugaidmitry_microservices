@@ -85,3 +85,12 @@ docker run -d --network=reddit -p 9292:9292 json1/ui:2.0
 - Определил в docker/docker-compose.yml новый сервис Exporters 
 - Добавил отслеживание за новым сервисом в Prometheus 
 - Залил образу на docker hub https://hub.docker.com/u/json1
+
+Д.3 23
+- пересобраны образы приложений с тегом logging.
+- развернул EFK комнадой sudo sysctl -w vm.max_map_count=262144. (
+The vm_max_map_count kernel setting needs to be set to at least 262144 for production use)
+
+- настроил docker-compose на вывод логов stdout в fluentd для post и ui.
+- добавил фильтр с регулярным выражением для ui.
+- заменил регулярное выражение на грок-шаблоны.
